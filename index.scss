@@ -1,0 +1,336 @@
+section{
+    margin-top:  9.375rem;
+}
+.label{
+   /* Label/Bold */
+
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.313rem;
+    line-height: 130%; 
+
+    &_bold{
+        font-family: 'Neue Montreal';
+        font-style: normal;
+        font-size: 1.313rem;
+        line-height: 130%; 
+        font-weight: 700;
+    }
+}
+.subheader{
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.875rem;
+    line-height: 120%;
+}
+.body_small{
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 1.313rem;
+    line-height: 130%;
+}
+.body_medium{
+    /* Body/Medium Regular */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.75rem;
+    line-height: 135%;
+}
+.body_large{
+    /* Body/Large Regular */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 120%;
+}
+.body_xlarge{
+
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2.5rem;
+    line-height: 120%;
+}
+.title_xl{
+      /* Title/XL */
+
+      font-family: 'Neue Montreal';
+      font-style: normal;
+      font-weight: 500;
+      font-size: 7.5rem;
+      line-height: 100%;
+      text-align: center;
+      letter-spacing: -0.02em;
+}
+.title_medium{
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 4rem;
+    line-height: 110%;
+    letter-spacing: -0.02em;
+}
+
+.title_large{
+    /* Title/Large */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 105%;
+}
+
+.description{
+    margin-top: 5rem;
+}
+.light{
+    margin: 9.375rem 2.5rem 0 2.5rem;
+}
+.background{
+    background: radial-gradient(210.82% 100% at 50% 0%, #4393FF 0%, #2DA7FA 15.1%, #8E9FFB 47.28%, #E498C5 74.75%, #FD8B89 100%);
+    border-radius: 0.75rem;
+
+    margin: 0;
+    padding: 9.375rem 17.375rem;
+
+    color: rgb(255, 255, 255, 0.4);
+    mix-blend-mode: normal;
+}
+
+.light_technology{
+    background-color: #000000;
+    padding-top:  9.375rem;
+    padding-bottom:  12.5rem;
+}
+.light_header{
+
+}
+.header_text{
+    
+    padding: 12.5rem 6.375rem;
+    /* padding: 0 13.75rem; */
+    /* Title/XL */
+    font-family: 'Neue Montreal';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 7.5rem;
+    line-height: 100%;
+    letter-spacing: -0.02em;
+    
+    background: linear-gradient(85.88deg, #FE8C8A 6.73%, #897DBA 36.57%, #78D0ED 64.61%, #88CC79 93.55%);;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.spectrum_title{
+    color: #FFF;
+}
+.description_container{
+    margin-top: 5rem;
+}
+.video{
+    margin-top: 8.125rem;
+}
+.description_block{
+    color: #FFF;
+    
+    .sub_block:not(:first-child){ 
+        margin-top: 3.5rem;
+    }
+    .more_item{
+        font-family: 'Neue Montreal';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.313rem;
+        line-height: 130%;
+        margin-top: 1rem;
+    }
+    .more_item > a{
+        color: #FFF;
+    }
+    svg{ 
+        margin-bottom: 0.45rem;
+        margin-right: 0.875rem;
+    }
+}
+
+.benefits_block{
+    color: #000;
+    
+    .sub_block:not(:first-child){ 
+        margin-top: 3.5rem;
+    }
+    .more_item{
+        font-family: 'Neue Montreal';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.313rem;
+        line-height: 130%;
+        margin-top: 1rem;
+    }
+    .more_item > a{
+        color: #000;
+    }
+    svg{ 
+        margin-bottom: 0.45rem;
+        margin-right: 0.875rem;
+    }
+}
+
+.dispersion{
+    margin-top: 12.5rem;
+}
+.dispersion_title{
+    color: #FFF;
+
+    video{
+        width: 100%;
+        height: 100%;
+    }
+}
+.image > img{
+
+    width: 100%;
+    height: 100%;
+}
+.plane{
+    margin-top: 12.5rem;;
+}
+.benefits{
+    overflow: hidden;
+    padding-left: 2.5rem;
+    .title{
+        margin-bottom: 5rem;
+    }
+}
+
+.divider{
+    height: 0.063rem;
+    background-color: #ECECEC;
+}
+.disease{
+    position: relative;
+    margin-top: 8.125rem;
+    .item{
+        font-weight: 400;
+        font-size: 7.5rem;
+        line-height: 105%;
+        color: #888888;
+        opacity: 0.5;
+    }
+    .row{
+        margin-top: 2rem;
+        // display: flex;
+        overflow: visible;
+        flex-wrap: nowrap;
+        gap: 2.5rem;
+    }
+    .flex{
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: nowrap;
+        white-space: nowrap;
+        padding: 0;
+    }
+    
+    .first{
+        margin-left: -20rem;}
+    .second{ margin-left: -27rem;}
+    .third{ margin-left: -30rem;}
+    .fourth{ margin-left: -8rem;}
+    .fifth{ margin-left: -16rem;}
+    overflow: visible;
+}
+.summary{
+    position: absolute;
+    background: radial-gradient(92.81% 114.13% at 50% -10.87%, #B46925 0%, #DC8B32 17.37%, #F3AE44 34.21%, #F5BF54 80.73%, #F0AF30 100%);
+    border-radius: 50%;
+    width: 40rem;
+    height: 40rem;
+    font-size: 3.5rem;
+    line-height: 110%;
+    color:  #FFF;
+    left: calc(50% - 20rem);
+    top: 4rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 4;
+
+    &_text{
+        width: 28.125rem;
+        text-align: center;
+    }
+}
+.upsell_header{
+    margin-top:  9.375rem;
+}
+.about_header{
+    margin-bottom: 8.125rem;
+}
+.members{
+    margin-top: 8.125rem;
+}
+.members_container{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    .row:not(:first-child){
+        margin-top: 6.25rem;
+    }
+    .row:last-child{
+        margin-bottom: 6.25rem;
+    }
+}
+.member{
+    .name{
+        margin-top: 2.5rem;
+    }
+    .role{
+        margin-top: 0.5rem;
+    }
+    .bio{
+        margin-top: 2.5rem;
+    }
+}
+
+.partners{
+
+    margin-top: 6.25rem;
+
+    &_container {
+        margin-left: 2.5rem;
+    }
+
+    &_header{
+        padding-left: 2.5rem;
+        margin-bottom: 5rem;
+    }
+    .divider{
+        margin-bottom: 6.25rem;
+    }
+    .row{
+        margin-top: 1rem;
+    }
+
+    margin-bottom:  9.375rem;
+}
+.partner{
+    display: flex;
+    flex-direction: column;
+    height: 25rem;
+    background: #F4F4F4;
+    padding-bottom: 3.438rem;
+
+    &_image{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
+}
