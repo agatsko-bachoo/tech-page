@@ -10,32 +10,53 @@
     .title{
         @include title_large;
         margin-bottom: 5rem;
+        @include media-breakpoint-down(sm){
+            @include title_small;
+            margin-bottom: 2.5rem;
+        }
+        
     }
     .description_container{
         margin-top: 5rem;
 
-        .benefits_block{
+        .benefits-box{
             
             @include body_medium;
-            .sub_block:not(:first-child){ 
+            &__item:not(:first-child){ 
                 margin-top: 3.5rem;
             }
-            .more_item{
-                font-family: 'Neue Montreal';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.313rem;
-                line-height: 130%;
-                margin-top: 1rem;
+            &__item{
+                &__link{
+                    font-family: 'Neue Montreal';
+                    font-style: normal;
+                    font-weight: 400;
+                    font-size: 1.313rem;
+                    line-height: 130%;
+                    margin-top: 1rem;
+                    
+                    gap: 0.9rem;
+                    display: flex;
+                    a{
+                        color: #000;
+                        flex: 1;
+                    }
 
-                display: flex;
+                    
+                }
             }
-            .more_item > a{
-                flex: 1;
+
+            @include media-breakpoint-down(sm){
+            
+                @include body_small;
             }
         }
+
+        @include media-breakpoint-down(sm){
+            
+            margin-top: 2.5rem;
+        }
     }
-    .disease{
+    .disease-box{
         position: relative;
         margin-top: 8.125rem;
         .item{
@@ -44,80 +65,21 @@
             line-height: 105%;
             color: #888888;
             opacity: 0.5;
+
+            @include media-breakpoint-down(sm){
+                
+                font-weight: $regular;
+                font-size: 3.5rem;
+                line-height: 105%;
+            }
         }
         .row{
             margin-top: 2rem;
             overflow: visible;
             flex-wrap: nowrap;
             gap: 2.5rem;
-        }
-        .flex{
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            flex-wrap: nowrap;
-            white-space: nowrap;
-            padding: 0;
-        }
-        
-        .first{
-            margin-left: -20rem;}
-        .second{ margin-left: -27rem;}
-        .third{ margin-left: -30rem;}
-        .fourth{ margin-left: -8rem;}
-        .fifth{ margin-left: -16rem;}
-        overflow: visible;
-    }
-    .summary{
-        position: absolute;
-        background: radial-gradient(92.81% 114.13% at 50% -10.87%, #B46925 0%, #DC8B32 17.37%, #F3AE44 34.21%, #F5BF54 80.73%, #F0AF30 100%);
-        border-radius: 50%;
-        width: 40rem;
-        height: 40rem;
-        font-size: 3.5rem;
-        line-height: 110%;
-        color:  #FFF;
-        left: calc(50% - 20rem);
-        top: 4rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        z-index: 4;
-    
-        &_text{
-            width: 28.125rem;
-            text-align: center;
-        }
-    }
-}
 
-@include media-breakpoint-down(sm) {
-    .ba-technology-benefits-section{
-        .title{
-            @include title_small;
-            margin-bottom: 2.5rem;
-        }
-        a {
-            text-decoration: none;
-        }
-        .description_container{
-            margin-top: 2.5rem;
-            
-            
-            .benefits_block{
-                @include body_small;
-            }
-        
-        }
-        .disease{
-            margin-top: 5rem;
-            .item{
-                font-weight: $regular;
-                font-size: 3.5rem;
-                line-height: 105%;
-            }
-            .row{
+            @include media-breakpoint-down(sm){
                 gap: 1.25rem;
                 margin-top: 1.5rem;
                 svg{
@@ -128,45 +90,104 @@
                         cy: 0.188rem;
                         r: 0.188rem;
                     }
-                }
+                }   
             }
-            
-            .first{
+        }
+        .flex{
+            flex: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            white-space: nowrap;
+            padding: 0;
+
+          
+        }
+        
+        .first{
+            margin-left: -20rem;
+            @include media-breakpoint-down(sm){
                 margin-left: -23rem;
             }
-            .second{
-                 margin-left: -27.5rem;
-                }
-            .third{
-                 margin-left: -27.5rem;
-                }
-            .fourth{
-                 margin-left: -18.5rem;
-                }
-            .fifth{
-                 margin-left: -24rem;
-                }
         }
-        .summary{
+        .second{
+            margin-left: -27rem;
+            @include media-breakpoint-down(sm){
+                margin-left: -27.5rem;
+            }
+        }
+        .third{ 
+            margin-left: -30rem;
+            @include media-breakpoint-down(sm){
+                margin-left: -27.5rem;
+            }
+        }
+        .fourth{ 
+            margin-left: -8rem;
+            @include media-breakpoint-down(sm){
+              
+                margin-left: -18.5rem;
+            }
+        }
+        .fifth{
+            margin-left: -16rem;
+             
+            @include media-breakpoint-down(sm){
+                
+                margin-left: -24rem;
+            }
+        }
+        overflow: visible;
+        
+        &__summary{
             position: absolute;
             background: radial-gradient(92.81% 114.13% at 50% -10.87%, #B46925 0%, #DC8B32 17.37%, #F3AE44 34.21%, #F5BF54 80.73%, #F0AF30 100%);
             border-radius: 50%;
-            width: 21.375rem;
-            height: 21.375rem;
-            font-size: 2.5rem;
-            line-height: 120%;
+            width: 40rem;
+            height: 40rem;
+            font-size: 3.5rem;
+            line-height: 110%;
             color:  #FFF;
-            left: calc(50% - 10.687rem);
-            top: 1.563rem;
+            left: calc(50% - 20rem);
+            top: 6rem;
             display: flex;
             align-items: center;
             justify-content: center;
             z-index: 4;
         
-            &_text{
-                width: 17.3rem;
+            &__text{
+                width: 28.125rem;
                 text-align: center;
+
+                @include media-breakpoint-down(sm){
+                    width: 17.3rem;
+                    text-align: center;
+                }
+            }
+
+            @include media-breakpoint-down(sm){
+                position: absolute;
+                background: radial-gradient(92.81% 114.13% at 50% -10.87%, #B46925 0%, #DC8B32 17.37%, #F3AE44 34.21%, #F5BF54 80.73%, #F0AF30 100%);
+                border-radius: 50%;
+                width: 21.375rem;
+                height: 21.375rem;
+                font-size: 2.5rem;
+                line-height: 120%;
+                color:  #FFF;
+                left: calc(50% - 10.687rem);
+                top: 3rem;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                z-index: 4;
+            
             }
         }
+
+        @include media-breakpoint-down(sm){
+            margin-top: 5rem;
+        }
     }
+    
 }

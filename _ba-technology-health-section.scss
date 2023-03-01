@@ -5,15 +5,10 @@
 @import '_fonts.scss';
 
 .ba-technology-health-section{
-    .description{
+    .content{
         @include body_xlarge;
-    }
-}
-
-@include media-breakpoint-down(sm) {
-    .ba-technology-health-section{  
-      .description{
-        @include body_medium;
-      }
+        @include media-breakpoint-down(sm){
+          @include body_medium;
+        }
     }
 }

@@ -7,13 +7,24 @@ section{
     padding-left: 2.5rem;
     padding-right: 2.5rem;
     margin-top:  9.375rem;
+    
+    @include media-breakpoint-down(sm) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        margin-top: 6.25rem;
+    }
 }
-.video{
+.video-box{
     margin-top: 8.125rem;
     
     video{
         width: 100%;
         height: 100%;
+    }
+
+    @include media-breakpoint-down(sm){
+        
+        margin-top: 5rem;
     }
 }
 
@@ -39,16 +50,5 @@ section{
         padding-left: 1.5rem;
         padding-right: 1.5rem;
         margin-top: 6.25rem;
-    }
-    .background{
-        padding: 6.25rem 1.5rem;
-        border-radius: 0;
-    }
-    .light{
-        padding-left: 0;
-        padding-right: 0;
-    }
-    .video{
-        margin-top: 5rem;
     }
   }

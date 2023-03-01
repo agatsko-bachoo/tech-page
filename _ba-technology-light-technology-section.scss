@@ -13,34 +13,56 @@
     .title{
         @include title_large;
         color: #FFF;
+        @include media-breakpoint-down(sm) {
+            
+            @include title_small;
+        }
     }
 
     .dispersion{
         margin-top: 12.5rem;
     }
-    .header{
+    .title-box{
         background-color: #000000;
-        .title{
+        &__content{
             @include title_xl;        
             padding: 12.5rem 6.375rem;
             
             background: linear-gradient(85.88deg, #FE8C8A 6.73%, #897DBA 36.57%, #78D0ED 64.61%, #88CC79 93.55%);;
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
+
+            @include media-breakpoint-down(sm){
+                @include body_xlarge;
+                padding: 0;
+            }
         }
     }
     
-    .description_container{
+    .description-container{
         margin-top: 5rem;
         
-        .description_block{
+        .description-box__content{
             
             color: #FFF;
             @include body_medium;
-            .sub_block:not(:first-child){ 
+            &__item{    
+                color: #FFF;
+                @include body_medium;
+                @include media-breakpoint-down(sm){
+                    margin-top: 2.5rem;
+                    @include body_small;
+                }
+                a{
+                    flex: 1;
+                    color: #FFF;
+                }
+            }
+            
+            &__item:not(:first-child){ 
                 margin-top: 3.5rem;
             }
-            .more_item{
+            &__more_item{
                 font-family: 'Neue Montreal';
                 font-style: normal;
                 font-weight: 400;
@@ -51,40 +73,21 @@
                 gap: 0.875rem;
                 display: flex;
             }
-            .more_item > a{
-                flex: 1;
-                color: #FFF;
+            
+
+            @include media-breakpoint-down(sm){
+                
+                @include body_small;
             }
         }
 
     }
-}
 
-@include media-breakpoint-down(sm) {
-    .ba-technology-light-technology-section{  
-        .title{
-            @include title_small;
-        }
-    
-        .spectrum,
-        .configuration,
-        .plane,
-        .dispersion{
+    .spectrum,
+    .configuration,
+    .plane,
+    .dispersion{
             padding-left: 0;
             padding-right: 0;   
-        }
-
-        .header{
-            .title{
-                @include body_xlarge;
-                
-                padding: 0;
-            }
-        }
-        .description_container{
-            .description_block{
-                @include body_small;
-            }
-        }
     }
 }
