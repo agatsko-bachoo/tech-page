@@ -1,4 +1,7 @@
 section{
+    
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
     margin-top:  9.375rem;
 }
 .label{
@@ -88,15 +91,12 @@ section{
 .description{
     margin-top: 5rem;
 }
-.light{
-    margin: 9.375rem 2.5rem 0 2.5rem;
-}
 .background{
     background: radial-gradient(210.82% 100% at 50% 0%, #4393FF 0%, #2DA7FA 15.1%, #8E9FFB 47.28%, #E498C5 74.75%, #FD8B89 100%);
     border-radius: 0.75rem;
 
     margin: 0;
-    padding: 9.375rem 17.375rem;
+    padding: 9.375rem 0;
 
     color: rgb(255, 255, 255, 0.4);
     mix-blend-mode: normal;
@@ -192,6 +192,9 @@ section{
         height: 100%;
     }
 }
+.image{
+    margin-top: 5rem;
+}
 .image > img{
 
     width: 100%;
@@ -202,7 +205,6 @@ section{
 }
 .benefits{
     overflow: hidden;
-    padding-left: 2.5rem;
     .title{
         margin-bottom: 5rem;
     }
@@ -298,17 +300,14 @@ section{
         margin-top: 2.5rem;
     }
 }
-
+.picture > img{
+    width: 100%;
+}
 .partners{
 
     margin-top: 6.25rem;
 
-    &_container {
-        margin-left: 2.5rem;
-    }
-
     &_header{
-        padding-left: 2.5rem;
         margin-bottom: 5rem;
     }
     .divider{
