@@ -1,0 +1,90 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '_vars.scss';
+@import '_fonts.scss';
+
+.ba-technology-light-technology-section{
+    
+    background-color: #000000;
+    padding-top:  9.375rem;
+    padding-bottom:  12.5rem;
+    
+    .title{
+        @include title_large;
+        color: #FFF;
+    }
+
+    .dispersion{
+        margin-top: 12.5rem;
+    }
+    .header{
+        background-color: #000000;
+        .title{
+            @include title_xl;        
+            padding: 12.5rem 6.375rem;
+            
+            background: linear-gradient(85.88deg, #FE8C8A 6.73%, #897DBA 36.57%, #78D0ED 64.61%, #88CC79 93.55%);;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+    
+    .description_container{
+        margin-top: 5rem;
+        
+        .description_block{
+            
+            color: #FFF;
+            @include body_medium;
+            .sub_block:not(:first-child){ 
+                margin-top: 3.5rem;
+            }
+            .more_item{
+                font-family: 'Neue Montreal';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.313rem;
+                line-height: 130%;
+                margin-top: 1rem;
+
+                gap: 0.875rem;
+                display: flex;
+            }
+            .more_item > a{
+                flex: 1;
+                color: #FFF;
+            }
+        }
+
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ba-technology-light-technology-section{  
+        .title{
+            @include title_small;
+        }
+    
+        .spectrum,
+        .configuration,
+        .plane,
+        .dispersion{
+            padding-left: 0;
+            padding-right: 0;   
+        }
+
+        .header{
+            .title{
+                @include body_xlarge;
+                
+                padding: 0;
+            }
+        }
+        .description_container{
+            .description_block{
+                @include body_small;
+            }
+        }
+    }
+}

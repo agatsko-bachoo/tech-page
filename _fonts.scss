@@ -1,0 +1,86 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '_vars.scss';
+
+@mixin body_small(){
+    font-family: $f-regular;
+    font-weight: $medium;
+    font-size: 1.313rem;
+    line-height: 130%;
+}
+
+@mixin label(){
+ 
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 1.313rem;
+     line-height: 130%; 
+ }
+ @mixin subheader(){
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 700;
+     font-size: 1.875rem;
+     line-height: 120%;
+ }
+ 
+ @mixin body_medium(){
+     /* Body/Medium Regular */
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 1.75rem;
+     line-height: 135%;
+ }
+ @mixin body_large(){
+     /* Body/Large Regular */
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 2rem;
+     line-height: 120%;
+ }
+ @mixin body_xlarge(){
+ 
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 2.5rem;
+     line-height: 120%;
+ }
+ @mixin title_xl(){
+    font-family: $f-regular;
+    font-weight: $medium;
+    font-size: 7.5rem;
+    line-height: 100%;
+    text-align: center;
+    letter-spacing: -0.02em;
+ }
+ @mixin title_medium(){
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 400;
+     font-size: 4rem;
+     line-height: 110%;
+     letter-spacing: -0.02em;
+ }
+ 
+ @mixin title_large(){
+     /* Title/Large */
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 72px;
+     line-height: 105%;
+ }
+ 
+ @mixin title_small(){
+     font-family: 'Neue Montreal';
+     font-style: normal;
+     font-weight: 500;
+     font-size: 2rem;
+     line-height: 120%;
+ }
+ 

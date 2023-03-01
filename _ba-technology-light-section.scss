@@ -1,0 +1,32 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '_vars.scss';
+@import '_fonts.scss';
+
+.ba-technology-light-section{
+    .background{
+        @include title_medium;
+        background: radial-gradient(210.82% 100% at 50% 0%, #4393FF 0%, #2DA7FA 15.1%, #8E9FFB 47.28%, #E498C5 74.75%, #FD8B89 100%);
+        border-radius: 0.75rem;
+    
+        margin: 0;
+        padding: 9.375rem 0;
+    
+        color: rgb(255, 255, 255, 0.4);
+        mix-blend-mode: normal;
+    }
+    
+}
+
+@include media-breakpoint-down(sm) {
+    .ba-technology-light-section{  
+        padding-left: 0;
+        padding-right: 0;
+        .background{
+            @include title_small;
+            padding: 6.25rem 1.5rem;
+            border-radius: 0;
+        }
+    }
+}

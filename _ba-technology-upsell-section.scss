@@ -1,0 +1,23 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '_vars.scss';
+@import '_fonts.scss';
+
+.ba-technology-upsell-section{   
+  .header{
+    margin-top:  9.375rem;
+    @include  title_large;
+  }
+     
+}
+
+@include media-breakpoint-down(sm) {
+    .ba-technology-upsell-section{  
+      .header{
+        @include  title_small;
+        margin-top:  6.25rem;
+      }
+ 
+    }
+}

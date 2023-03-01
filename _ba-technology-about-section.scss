@@ -1,0 +1,93 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '_vars.scss';
+@import '_fonts.scss';
+
+.ba-technology-about-section{
+  .header{
+    @include title_large;
+    margin-bottom: 8.125rem;
+  }
+
+  .members{
+    margin-top: 8.125rem;
+
+    
+    .title{
+      @include subheader;
+    }
+    .description{
+      @include body_large;
+    }
+  }
+
+  .members_container{
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+    .row:not(:first-child){
+        margin-top: 6.25rem;
+    }
+    .row:last-child{
+        margin-bottom: 6.25rem;
+    }
+    .member{
+      .name{
+          margin-top: 2.5rem;
+          @include label;
+          font-weight: $bold;
+      }
+      .role{
+          margin-top: 0.5rem;
+          @include body_small;
+      }
+      .bio{
+        
+          @include label;
+          margin-top: 2.5rem;
+      }
+  }
+}
+}
+
+
+@include media-breakpoint-down(sm) {
+    .ba-technology-about-section{  
+      .header{        
+        @include title_small;
+        margin-bottom: 5rem;
+      }
+      .members{
+        margin-top: 5rem;
+        padding: 0;
+        .description{
+          margin-top: 2.5rem;
+        }
+      }
+      .members_container{
+        margin-left: 0rem;
+        margin-right: 0rem;
+        .row:not(:first-child){
+          margin-top: 0;
+        }
+        .row:nth-child(2){
+            margin-top: 5rem;
+        }
+        .row:last-child{
+            margin-bottom: 6.25rem;
+        }
+        .member{
+          margin-top: 2rem;
+          .name{
+            margin-top: 1rem;
+          }
+          .role{
+            @include body_small;
+          } 
+          .bio{
+            margin-top: 1rem;
+          }
+        }
+      }
+    }
+}

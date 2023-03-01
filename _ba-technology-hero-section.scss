@@ -1,0 +1,30 @@
+@import '../node_modules/bootstrap/scss/functions';
+@import '../node_modules/bootstrap/scss/variables';
+@import '../node_modules/bootstrap/scss/mixins';
+@import '_vars.scss';
+@import '_fonts.scss';
+
+
+.ba-technology-hero-section{
+    
+    .title{
+        @include title_xl;
+    }
+    .description{
+        margin-top: 5rem;
+
+        @include body_large;
+        font-weight: $regular;
+    }
+}
+
+@include media-breakpoint-down(sm) {
+    .ba-technology-hero-section{
+        .title{
+            @include title_medium;
+        }
+        .description{
+            @include body_small;
+        }
+    }
+}
