@@ -100,4 +100,21 @@
             padding-left: 0;
             padding-right: 0;   
     }
+    .configuration{
+        @include media-breakpoint-down(sm){
+                
+            video {
+                margin-left: -18%;
+            }
+        }
+    }
+    .plane{
+
+        @include media-breakpoint-down(sm){
+                
+            video {
+                margin-left: -128%;
+            }
+        }
+    }
 }
