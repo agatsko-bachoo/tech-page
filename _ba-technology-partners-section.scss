@@ -5,6 +5,12 @@
 @import '_fonts.scss';
 
 .ba-technology-partners-section{
+  .row{
+    @include media-breakpoint-down(sm){
+
+      margin-top: 1rem;
+    }
+  }
   .header{
     @include subheader;
     margin-top: 5rem;
@@ -20,9 +26,6 @@
     .divider{
         margin-bottom: 6.25rem;
     }
-    .row{
-        // margin-top: 1rem;
-    }
 
     margin-bottom:  9.375rem;
   }
@@ -36,28 +39,28 @@
     // padding-bottom: 3.438rem;
 
     &_title{
+      flex: 1;
       @include label;
     }
     &_image{
         display: flex;
         align-items: center;
         justify-content: center;
-        // flex: 1;
+        flex: 1;
+        img{
+          width: 100%;
+          height: 100%;
+          @include media-breakpoint-down(sm) {
+            height: 60%;
+            width: 60%;
+          }
+        }
+        
+    }
+    @include media-breakpoint-down(sm) {
+
+      height: 15.875rem;
+      @include label;
     }
   }
-
-
-}
-
-@include media-breakpoint-down(sm) {
-    .ba-technology-partners-section{  
-      .partner{
-        height: 15.875rem;
-        // padding-bottom: 3.375rem;
-        @include label;
-      }
-      .row{
-        margin-top: 1rem;
-      }
-    }
 }
