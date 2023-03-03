@@ -35,6 +35,9 @@
     background: #F4F4F4;
     // padding-bottom: 3.438rem;
 
+    &_title{
+      @include label;
+    }
     &_image{
         display: flex;
         align-items: center;
